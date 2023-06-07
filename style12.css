@@ -1,0 +1,42 @@
+body{
+   background: #F5D684; 
+}
+/*usei para colocar a cor de fundo de acordo*/
+
+*{
+    box-sizing: border-box;
+}
+/*usei para indicar o tamanho de acordo a largura da página*/
+
+div{
+    width: 100px;
+    height: 50px;
+    border: 20px solid #d86f45;
+    border-radius: 110px 110px 0 0;
+    border-bottom: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: calc(-50%, -50%);
+}
+/*usei para criar o elemento e colocar a curva e formato nele*/
+
+div::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    border: 20px solid #d86f45;
+    border-radius: 0 0 50px 50px;
+    border-top: 0;
+    top: 30px;
+    left: -100px;
+    filter: drop-shadow(160px 0 0 #d86f45);
+}
+
+div::after {
+    content: '';
+    position: absolute;
+    border: 10px solid #d86f45;
+    border-radius: 50%;
+}
